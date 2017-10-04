@@ -7,6 +7,7 @@
 	<script  type="text/javascript" src="d3.min.js"></script>
 </head>
 <body>
+	<h1>HELLO WORLD</h1>
 <!--Place all DOM elements here -->
 <script  type="text/javascript" src="survey_data.js"></script>
 <script>
@@ -91,7 +92,7 @@ function plot(params){
 	var donuts = d3.keys(params.data[0]).filter(function(d){
 		return d !== "age" && d !== "responses";
 	});
-	
+
 	//enter() for <g>
 	this.selectAll(".donut")
 		.data(donuts)
